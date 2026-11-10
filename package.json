@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-alexis-bonino",
+  "version": "1.0.0",
+  "description": "Portfolio personal tipo landing page y casos de estudio de Alexis Bonino",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "ux-ui",
+    "frontend",
+    "vanilla-js"
+  ],
+  "author": "Alexis Bonino",
+  "license": "MIT"
+}
+

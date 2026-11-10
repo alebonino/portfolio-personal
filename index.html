@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Básico -->
+  <title>Alexis Bonino — Diseñador UX/UI · Córdoba, Argentina</title>
+  <meta name="description" content="Portfolio de Alexis Bonino, estudiante de Diseño UX/UI de 20 años en Córdoba, Argentina. Proyectos y sitios web diseñados con criterio editorial y funcional." />
+  <meta name="author" content="Alexis Bonino" />
+  <link rel="canonical" href="https://alexisbonino.pages.dev/" />
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:title" content="Alexis Bonino — Diseñador UX/UI" />
+  <meta property="og:description" content="Portfolio personal de Alexis Bonino. Diseño web y UX/UI desde Córdoba, Argentina." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alexisbonino.pages.dev/" />
+  <meta property="og:image" content="assets/foto.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alexis Bonino — Diseñador UX/UI" />
+  <meta name="twitter:description" content="Portfolio personal de Alexis Bonino. Diseño web y UX/UI desde Córdoba, Argentina." />
+  <meta name="twitter:image" content="assets/foto.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#141414" />
+
+  <!-- Google Fonts autorizadas: Newsreader (300 light / cursiva) & Hanken Grotesk (300 / 400 / 500) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet" />
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body id="top" class="is-loading">
+  <!-- Enlace accesible de salto para navegación por teclado -->
+  <a href="#proyectos" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ====================================================================
+       1. PANTALLA DE CARGA BREVE (Máx 1.5s)
+       Monograma con animación sutil que luego se desvanece
+       ==================================================================== -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <span class="preloader-monogram">AB</span>
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       2. CURSOR PERSONALIZADO (Solo en escritorio con mouse)
+       ==================================================================== -->
+  <div id="custom-cursor" class="custom-cursor" aria-hidden="true">
+    <span id="cursor-label" class="cursor-label"></span>
+  </div>
+
+  <!-- ====================================================================
+       3. HEADER FIJO
+       Iniciales a la izquierda, botón "@" a la derecha
+       ==================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#top" class="header-logo" aria-label="Alexis Bonino — Inicio">
+        AB
+      </a>
+
+      <!-- Botón "@" para abrir menú lateral -->
+      <button 
+        type="button" 
+        id="menu-trigger" 
+        class="menu-btn" 
+        aria-expanded="false" 
+        aria-controls="side-drawer" 
+        aria-label="Abrir menú de navegación y contacto"
+      >
+        @
+      </button>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       4. MENÚ LATERAL (DRAWER)
+       Se abre con el botón "@" y se cierra con X o ESC
+       ==================================================================== -->
+  <div id="drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+
+  <aside 
+    id="side-drawer" 
+    class="side-drawer" 
+    aria-hidden="true" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-label="Menú y Contacto"
+  >
+    <div class="drawer-top">
+      <span class="drawer-logo" aria-hidden="true">AB</span>
+      <button 
+        type="button" 
+        id="menu-close" 
+        class="drawer-close" 
+        aria-label="Cerrar menú"
+      >
+        &times;
+      </button>
+    </div>
+
+    <div class="drawer-content">
+      <!-- Grupo MENÚ -->
+      <div class="drawer-group">
+        <span class="drawer-group-title">MENÚ</span>
+        <ul class="drawer-nav-list" role="list">
+          <li><a href="#proyectos" class="drawer-link">Proyectos</a></li>
+          <li><a href="#sobre-mi" class="drawer-link">Sobre mí</a></li>
+        </ul>
+      </div>
+
+      <!-- Grupo CONTACTO (Sin Behance) -->
+      <div class="drawer-group">
+        <span class="drawer-group-title">CONTACTO</span>
+        <ul class="drawer-contact-list" role="list">
+          <li>
+            <a href="mailto:alebonino235@gmail.com" class="drawer-contact-link">
+              <span>Email</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/5493524418493" target="_blank" rel="noopener noreferrer" class="drawer-contact-link">
+              <span>WhatsApp</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/nahuel.roldan__/" target="_blank" rel="noopener noreferrer" class="drawer-contact-link">
+              <span>Instagram</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/alexis-bonino-494803426/" target="_blank" rel="noopener noreferrer" class="drawer-contact-link">
+              <span>LinkedIn</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <span>Córdoba, Argentina · 2026</span>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    
+    <!-- ==================================================================
+         5. HERO A PANTALLA COMPLETA (100vh)
+         Nombre muy grande, Diseñador UX/UI debajo, indicador con flecha
+         ================================================================== -->
+    <section class="hero-fullscreen" aria-label="Presentación">
+      <div class="container hero-body">
+        <h1 class="hero-name">
+          Alexis Bonino
+        </h1>
+        <p class="hero-role">
+          Diseñador UX/UI
+        </p>
+      </div>
+
+      <div class="container hero-scroll-bottom">
+        <a 
+          href="#statement-section" 
+          id="scroll-indicator-btn" 
+          class="scroll-indicator-link" 
+          aria-label="Desplazarse hacia abajo para ver mis proyectos"
+        >
+          <span>Scroll para ver mis proyectos</span>
+          <span class="scroll-arrow-box" aria-hidden="true">
+            <span class="scroll-arrow">↓</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         6. FRASE DE PRESENTACIÓN
+         Revelado palabra por palabra al hacer scroll
+         ================================================================== -->
+    <section id="statement-section" class="section-statement" aria-label="Declaración de diseño">
+      <div class="container">
+        <div class="statement-content">
+          <h2 class="statement-headline">
+            Diseño sitios web con identidad propia para marcas y emprendimientos.
+          </h2>
+          <p class="statement-sub">
+            Estudiante de Diseño UX/UI · 20 años · Córdoba, Argentina.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         7. SECCIÓN "PROYECTOS SELECCIONADOS '26" (Protagonista)
+         Capturas grandes con fondo de color suave propio de cada proyecto.
+         Generados dinámicamente desde el array en js/main.js.
+         ================================================================== -->
+    <section id="proyectos" class="section-projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="projects-header reveal-on-scroll">
+          <h2 id="projects-heading" class="section-label">Proyectos seleccionados '26</h2>
+        </header>
+
+        <!-- Contenedor inyectado dinámicamente por js/main.js -->
+        <div id="proyectos-container" class="projects-stack">
+          <!-- Renderizado dinámico vía renderProjects() en js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         8. SOBRE MÍ
+         Foto y texto breve en primera persona: 20 años, estudiante UX/UI, Córdoba.
+         ================================================================== -->
+    <section id="sobre-mi" class="section-about" aria-labelledby="about-heading">
+      <div class="container">
+        <span id="about-heading" class="section-label reveal-on-scroll">Sobre mí</span>
+
+        <div class="about-layout">
+          <!-- Fotografía con efecto suave al scroll -->
+          <div class="about-photo-frame reveal-on-scroll">
+            <img 
+              src="assets/foto.jpg" 
+              alt="Fotografía de Alexis Bonino" 
+              class="about-photo"
+              loading="lazy"
+              width="420"
+              height="525"
+              onerror="window.handleImageError(this, 'Alexis Bonino', false);"
+            />
+          </div>
+
+          <!-- Texto descriptivo con espacio para personalizar -->
+          <div class="about-text-column reveal-on-scroll">
+            <h3 class="about-intro-title">
+              Hola, soy <span class="editorial-italic">Alexis.</span>
+            </h3>
+            <p class="about-bio">
+              Tengo 20 años, estudio Diseño UX/UI y vivo en Córdoba, Argentina. Concibo el diseño web como una herramienta para comunicar la identidad real de un proyecto: desde la jerarquía visual y la tipografía hasta la experiencia en cada dispositivo. Busco que cada sitio tenga carácter propio, sin recursos genéricos y con un criterio funcional enfocado en quienes lo navegan.
+            </p>
+            <p class="about-custom-phrase">
+              Me gusta que cada proyecto tenga personalidad propia: escucho lo que una marca quiere transmitir y lo convierto en un sitio claro, cálido y fácil de recorrer. Hoy combino la carrera con proyectos reales para emprendimientos, incluida mi propia marca, Adalia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       9. FOOTER GRANDE
+       Frase "¿Hablamos?", columnas MENÚ y CONTACTO, iniciales y firma
+       ==================================================================== -->
+  <footer id="contacto" class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      
+      <!-- Frase de invitación grande con flecha diagonal -->
+      <div class="footer-cta reveal-on-scroll">
+        <a href="mailto:alebonino235@gmail.com" class="footer-cta-title" aria-label="Enviar un correo electrónico para conversar">
+          <span>¿Hablamos?</span>
+          <span class="footer-cta-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <!-- Grupos de links en mayúsculas chicas: MENÚ y CONTACTO -->
+      <div class="footer-links-grid">
+        <div class="footer-group">
+          <span class="footer-group-title">MENÚ</span>
+          <ul class="footer-list" role="list">
+            <li><a href="#proyectos" class="footer-link">Proyectos</a></li>
+            <li><a href="#sobre-mi" class="footer-link">Sobre mí</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-group">
+          <span class="footer-group-title">CONTACTO</span>
+          <ul class="footer-list" role="list">
+            <li>
+              <a href="mailto:alebonino235@gmail.com" class="footer-link">Email: alebonino235@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://wa.me/5493524418493" target="_blank" rel="noopener noreferrer" class="footer-link">WhatsApp: 3524 418493</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/nahuel.roldan__/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram: @nahuel.roldan__</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/alexis-bonino-494803426/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn: Alexis Bonino</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Firma inferior con año dinámico -->
+      <div class="footer-bottom-bar">
+        <span class="footer-monogram" aria-hidden="true">AB</span>
+        <p class="footer-signoff">
+          Alexis Bonino · <span id="current-year">2026</span> · Hecho en Córdoba con mate y muchas pestañas abiertas.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       SCRIPTS: LENIS + GSAP + SCROLLTRIGGER (CDN) & MAIN.JS
+       Si falla el CDN o está offline, el código degrada con gracia nativa.
+       ==================================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
